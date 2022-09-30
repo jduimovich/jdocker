@@ -1,11 +1,11 @@
 
 ls output 
 
-docker build  -t demo .
+docker build  -t jduimovich/demo .
 rm -rf output
 mkdir output
 
-docker run -v output:/mydirectory demo
+docker run -v output:/mydirectory jduimovich/demo
 
 ls output 
 
