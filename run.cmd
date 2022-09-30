@@ -1,9 +1,11 @@
 
+@echo off
+
 echo before
 dir output 
 
 docker build  -t jduimovich/demo .
-rmdir /y /s output
+rmdir /y /q output
 mkdir output
 
 docker run -v %cd%\output:/mydirectory jduimovich/demo
